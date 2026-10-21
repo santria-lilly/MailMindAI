@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FDFCF7;
+    color: #2D3748;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Custom subtle scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D2C7;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A4B2A8;
+}
+
+/* Glass and subtle card utilities */
+.card-subtle {
+  background-color: #FFFFFF;
+  border: 1px solid #EAE4DC;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(45, 55, 72, 0.03);
+}
+
+.card-warm {
+  background-color: #FAF8F4;
+  border: 1px solid #EAE4DC;
+  border-radius: 0.75rem;
+}
+
+.badge-critical {
+  background-color: #FFF1F2;
+  color: #BE123C;
+  border: 1px solid #FECDD3;
+}
+
+.badge-high {
+  background-color: #FFF7ED;
+  color: #C2410C;
+  border: 1px solid #FFEDD5;
+}
+
+.badge-medium {
+  background-color: #F0F7F9;
+  color: #2B6CB0;
+  border: 1px solid #D2E5EC;
+}
+
+.badge-low {
+  background-color: #F8FAFC;
+  color: #64748B;
+  border: 1px solid #E2E8F0;
+}
